@@ -67,7 +67,7 @@ if (!function_exists('sss4givewp_review_notice')) {
                             <?php _e('Hey, you\'ve been using "Simple Social Shout for GiveWP" for a while now. We have some other free things in the GiveWP Newsletter that we think you\'ll love.', 'sss4givewp');
                             ?>
                         </p>
-                        <?php include_once SIMPLE_SOCIAL_SHARE_4_GIVEWP_DIR . 'includes/admin/subscribe.php'; ?>
+                        <?php include_once GIVEWP_PT4FB_DIR . 'includes/admin/subscribe.php'; ?>
 
                         <a href="<?php echo admin_url($nag_admin_dismiss_url); ?>" class="dismiss"><span class="dashicons dashicons-dismiss"></span></a>
 
