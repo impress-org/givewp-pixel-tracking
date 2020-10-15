@@ -1,6 +1,8 @@
 <?php
 namespace GiveFBPT\Domain;
 
+use \Give\Helpers\Form\Utils as FormUtils;
+
 /**
  * Helper class responsible for loading add-on assets.
  *
@@ -39,19 +41,21 @@ class Assets {
 	 * @return void
 	 */
 	public static function loadFrontendAssets() {
-		wp_enqueue_style(
-			'give-fbpt-style-frontend',
-			GIVE_FBPT_URL . 'public/css/give-fbpt.css',
-			[],
-			GIVE_FBPT_VERSION
-		);
-
-		wp_enqueue_script(
-			'give-fbpt-script-frontend',
-			GIVE_FBPT_URL . 'public/js/give-fbpt.js',
-			[],
-			GIVE_FBPT_VERSION,
-			true
-		);
+		if ( FormUtils::isViewingFormReceipt() ) {
+			wp_enqueue_style(
+				'give-fbpt-style-frontend',
+				GIVE_FBPT_URL . 'public/css/give-fbpt.css',
+				[],
+				GIVE_FBPT_VERSION
+			);
+	
+			wp_enqueue_script(
+				'give-fbpt-script-frontend',
+				GIVE_FBPT_URL . 'public/js/give-fbpt.js',
+				[],
+				GIVE_FBPT_VERSION,
+				true
+			);
+		}
 	}
 }

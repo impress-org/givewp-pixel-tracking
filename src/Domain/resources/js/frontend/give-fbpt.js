@@ -1,3 +1,4 @@
+console.log('FBPT script loaded!');
 if (typeof window.fbq !== "undefined") { 
     console.log('An FB Pixel was detected! The GiveWP Donation Pixel can now fire!');
     // const form = document.querySelector('form[id*="give-form"]');
