@@ -1,11 +1,11 @@
 <?php namespace GiveFBPT;
 
 use GiveFBPT\Addon\Activation;
-use GiveFBPT\A∑∑ddon\Environment;
+use GiveFBPT\Addon\Environment;
 use GiveFBPT\Domain\AddonServiceProvider;
 
 /**
- * Plugin Name: GIVE_FBPT
+ * Plugin Name: Give - Facebook Pixel Tracking
  * Plugin URI:  https://givewp.com/addons/BOILERPLATE/
  * Description: ADDON_DESCRIPTION
  * Version:     1.0.0
@@ -29,7 +29,7 @@ define( 'GIVE_FBPT_DIR', plugin_dir_path( GIVE_FBPT_FILE ) );
 define( 'GIVE_FBPT_URL', plugin_dir_url( GIVE_FBPT_FILE ) );
 define( 'GIVE_FBPT_BASENAME', plugin_basename( GIVE_FBPT_FILE ) );
 
-require './vendor/autoload.php';
+require GIVE_FBPT_DIR . '/vendor/autoload.php';
 
 // Activate add-on hook.
 register_activation_hook( GIVE_FBPT_FILE, [ Activation::class, 'activateAddon' ] );

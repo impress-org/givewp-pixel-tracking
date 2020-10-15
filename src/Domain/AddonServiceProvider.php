@@ -49,7 +49,8 @@ class AddonServiceProvider implements ServiceProvider {
 		SettingsPage::registerPage( AddonSettingsPage::class );
 
 		Hooks::addAction( 'admin_init', License::class, 'check' );
-		Hooks::addAction( 'admin_init', ActivationBanner::class, 'show' );
+		//Hooks::addAction( 'admin_init', ActivationBanner::class, 'show' );
+		
 		// Load backend assets.
 		Hooks::addAction( 'admin_enqueue_scripts', Assets::class, 'loadBackendAssets' );
 		/**

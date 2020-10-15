@@ -97,14 +97,14 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 
 /***/ }),
 
-/***/ "./src/Domain/resources/css/frontend/give-fbpt-frontend.scss":
-/*!*******************************************************************!*\
-  !*** ./src/Domain/resources/css/frontend/give-fbpt-frontend.scss ***!
-  \*******************************************************************/
+/***/ "./src/Domain/resources/css/frontend/give-fbpt.scss":
+/*!**********************************************************!*\
+  !*** ./src/Domain/resources/css/frontend/give-fbpt.scss ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvRG9tYWluL3Jlc291cmNlcy9jc3MvZnJvbnRlbmQvZ2l2ZS1mYnB0LWZyb250ZW5kLnNjc3M/ZDVkMiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3NyYy9Eb21haW4vcmVzb3VyY2VzL2Nzcy9mcm9udGVuZC9naXZlLWZicHQtZnJvbnRlbmQuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/Domain/resources/css/frontend/give-fbpt-frontend.scss\n");
+eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvRG9tYWluL3Jlc291cmNlcy9jc3MvZnJvbnRlbmQvZ2l2ZS1mYnB0LnNjc3M/Yzc1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiIuL3NyYy9Eb21haW4vcmVzb3VyY2VzL2Nzcy9mcm9udGVuZC9naXZlLWZicHQuc2Nzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHJlbW92ZWQgYnkgZXh0cmFjdC10ZXh0LXdlYnBhY2stcGx1Z2luIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/Domain/resources/css/frontend/give-fbpt.scss\n");
 
 /***/ }),
 
@@ -120,15 +120,15 @@ eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset
 /***/ }),
 
 /***/ 0:
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** multi ./src/Domain/resources/js/admin/give-fbpt-admin.js ./src/Domain/resources/css/admin/give-fbpt-admin.scss ./src/Domain/resources/css/frontend/give-fbpt-frontend.scss ***!
-  \**********************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************!*\
+  !*** multi ./src/Domain/resources/js/admin/give-fbpt-admin.js ./src/Domain/resources/css/admin/give-fbpt-admin.scss ./src/Domain/resources/css/frontend/give-fbpt.scss ***!
+  \*************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/work/Documents/GitHub/givewp-facebook-pixel-tracking/src/Domain/resources/js/admin/give-fbpt-admin.js */"./src/Domain/resources/js/admin/give-fbpt-admin.js");
 __webpack_require__(/*! /Users/work/Documents/GitHub/givewp-facebook-pixel-tracking/src/Domain/resources/css/admin/give-fbpt-admin.scss */"./src/Domain/resources/css/admin/give-fbpt-admin.scss");
-module.exports = __webpack_require__(/*! /Users/work/Documents/GitHub/givewp-facebook-pixel-tracking/src/Domain/resources/css/frontend/give-fbpt-frontend.scss */"./src/Domain/resources/css/frontend/give-fbpt-frontend.scss");
+module.exports = __webpack_require__(/*! /Users/work/Documents/GitHub/givewp-facebook-pixel-tracking/src/Domain/resources/css/frontend/give-fbpt.scss */"./src/Domain/resources/css/frontend/give-fbpt.scss");
 
 
 /***/ })

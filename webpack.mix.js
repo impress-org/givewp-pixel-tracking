@@ -11,7 +11,7 @@ mix
 
 	// public assetsç
 	.js( 'src/Domain/resources/js/frontend/give-fbpt.js', 'public/js/' )
-	.sass( 'src/Domain/resources/css/frontend/give-fbpt-frontend.scss', 'public/css' );
+	.sass( 'src/Domain/resources/css/frontend/give-fbpt.scss', 'public/css' );
 
 mix.webpackConfig( {
 	externals: {
