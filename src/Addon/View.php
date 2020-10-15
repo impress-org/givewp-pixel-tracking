@@ -1,13 +1,13 @@
 <?php
 
-namespace GiveAddon\Addon\Helpers;
+namespace GiveFBPT\Addon\Helpers;
 
 use InvalidArgumentException;
 
 /**
  * Helper class responsible for loading add-on views.
  *
- * @package     GiveAddon\Addon\Helpers
+ * @package     GiveFBPT\Addon\Helpers
  * @copyright   Copyright (c) 2020, GiveWP
  */
 class View {
@@ -23,7 +23,7 @@ class View {
 	 * @return string|void
 	 */
 	public static function load( $view, $templateParams = [], $echo = false ) {
-		$template = ADDON_CONSTANT_DIR . 'src/Addon/resources/views/' . $view . '.php';
+		$template = GIVE_FBPT_DIR . 'src/Addon/resources/views/' . $view . '.php';
 
 		if ( ! file_exists( $template ) ) {
 			throw new InvalidArgumentException( "View template file {$template} not exist" );

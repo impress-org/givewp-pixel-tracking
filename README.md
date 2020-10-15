@@ -8,7 +8,7 @@ plugin for WordPress
 3. `npm install`
 
 ## Concepts
-
+npm
 GiveWP follows a domain-driven model both in core and in add-ons. Each business feature defines
 its own domain, including whatever it needs (settings, models, etc.) to do what it does. It's also
 important these domains are portable, that is, they are not bound to the plugin and could move to or

@@ -1,11 +1,11 @@
 <?php
 
-namespace GiveAddon\Addon;
+namespace GiveFBPT\Addon;
 
 /**
  * Helper class responsible for showing add-on Activation Banner.
  *
- * @package     GiveAddon\Addon\Helpers
+ * @package     GiveFBPT\Addon\Helpers
  * @copyright   Copyright (c) 2020, GiveWP
  */
 class ActivationBanner {
@@ -19,9 +19,9 @@ class ActivationBanner {
 	public function show() {
 		// Only runs on admin.
 		$args = [
-			'file'              => ADDON_CONSTANT_FILE,
-			'name'              => ADDON_CONSTANT_NAME,
-			'version'           => ADDON_CONSTANT_VERSION,
+			'file'              => GIVE_FBPT_FILE,
+			'name'              => GIVE_FBPT_NAME,
+			'version'           => GIVE_FBPT_VERSION,
 			'settings_url'      => admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=give-addon-boilerplate' ),
 			'documentation_url' => 'https://givewp.com/documentation/add-ons/boilerplate/',
 			'support_url'       => 'https://givewp.com/support/',

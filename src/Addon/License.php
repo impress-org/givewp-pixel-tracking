@@ -1,6 +1,6 @@
 <?php
 
-namespace GiveAddon\Addon;
+namespace GiveFBPT\Addon;
 
 class License {
 
@@ -12,9 +12,9 @@ class License {
 	 */
 	public function check() {
 		new \Give_License(
-			ADDON_CONSTANT_FILE,
-			ADDON_CONSTANT_NAME,
-			ADDON_CONSTANT_VERSION,
+			GIVE_FBPT_FILE,
+			GIVE_FBPT_NAME,
+			GIVE_FBPT_VERSION,
 			'GiveWP'
 		);
 	}

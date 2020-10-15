@@ -1,10 +1,10 @@
 <?php
-namespace GiveAddon\Domain;
+namespace GiveFBPT\Domain;
 
 /**
  * Helper class responsible for loading add-on assets.
  *
- * @package     GiveAddon\Addon
+ * @package     GiveFBPT\Addon
  * @copyright   Copyright (c) 2020, GiveWP
  */
 class Assets {
@@ -17,17 +17,17 @@ class Assets {
 	 */
 	public static function loadBackendAssets() {
 		wp_enqueue_style(
-			'ADDON_ID-style-backend',
-			ADDON_CONSTANT_URL . 'public/css/ADDON_ID-admin.css',
+			'give-fbpt-style-backend',
+			GIVE_FBPT_URL . 'public/css/give-fbpt-admin.css',
 			[],
-			ADDON_CONSTANT_VERSION
+			GIVE_FBPT_VERSION
 		);
 
 		wp_enqueue_script(
-			'ADDON_ID-script-backend',
-			ADDON_CONSTANT_URL . 'public/js/ADDON_ID-admin.js',
+			'give-fbpt-script-backend',
+			GIVE_FBPT_URL . 'public/js/give-fbpt-admin.js',
 			[],
-			ADDON_CONSTANT_VERSION,
+			GIVE_FBPT_VERSION,
 			true
 		);
 	}
@@ -40,17 +40,17 @@ class Assets {
 	 */
 	public static function loadFrontendAssets() {
 		wp_enqueue_style(
-			'ADDON_ID-style-frontend',
-			ADDON_CONSTANT_URL . 'public/css/ADDON_ID.css',
+			'give-fbpt-style-frontend',
+			GIVE_FBPT_URL . 'public/css/give-fbpt.css',
 			[],
-			ADDON_CONSTANT_VERSION
+			GIVE_FBPT_VERSION
 		);
 
 		wp_enqueue_script(
-			'ADDON_ID-script-frontend',
-			ADDON_CONSTANT_URL . 'public/js/ADDON_ID.js',
+			'give-fbpt-script-frontend',
+			GIVE_FBPT_URL . 'public/js/give-fbpt.js',
 			[],
-			ADDON_CONSTANT_VERSION,
+			GIVE_FBPT_VERSION,
 			true
 		);
 	}

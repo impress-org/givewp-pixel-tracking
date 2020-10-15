@@ -1,13 +1,13 @@
 <?php
 
-namespace GiveAddon\Domain\Helpers;
+namespace GiveFBPT\Domain\Helpers;
 
 use InvalidArgumentException;
 
 /**
  * Helper class responsible for adding settings pages.
  *
- * @package     GiveAddon\Addon\Helpers
+ * @package     GiveFBPT\Addon\Helpers
  * @copyright   Copyright (c) 2020, GiveWP
  */
 class SettingsPage {

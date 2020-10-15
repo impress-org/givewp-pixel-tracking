@@ -1,20 +1,20 @@
 <?php
-namespace GiveAddon\Domain;
+namespace GiveFBPT\Domain;
 
 use Give\Helpers\Hooks;
 use Give\ServiceProviders\ServiceProvider;
 
-use GiveAddon\Domain\Helpers\SettingsPage;
-use GiveAddon\Domain\SettingsPage as AddonSettingsPage;
-use GiveAddon\Addon\Activation;
-use GiveAddon\Addon\License;
-use GiveAddon\Addon\Language;
-use GiveAddon\Addon\ActivationBanner;
+use GiveFBPT\Domain\Helpers\SettingsPage;
+use GiveFBPT\Domain\SettingsPage as AddonSettingsPage;
+use GiveFBPT\Addon\Activation;
+use GiveFBPT\Addon\License;
+use GiveFBPT\Addon\Language;
+use GiveFBPT\Addon\ActivationBanner;
 
 /**
  * Example of a service provider responsible for add-on initialization.
  *
- * @package     GiveAddon\Addon
+ * @package     GiveFBPT\Addon
  * @copyright   Copyright (c) 2020, GiveWP
  */
 class AddonServiceProvider implements ServiceProvider {

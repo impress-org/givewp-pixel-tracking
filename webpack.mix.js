@@ -6,12 +6,12 @@ mix
 	.sourceMaps( false )
 
 	// admin assets
-	.js( 'src/Addon/resources/js/admin/ADDON_ID-admin.js', 'public/js/' )
-	.sass( 'src/Addon/resources/css/admin/ADDON_ID-admin.scss', 'public/css' )
+	.js( 'src/Domain/resources/js/admin/give-fbpt-admin.js', 'public/js/' )
+	.sass( 'src/Domain/resources/css/admin/give-fbpt-admin.scss', 'public/css' )
 
-	// public assets
-	.js( 'src/Addon/resources/js/frontend/ADDON_ID.js', 'public/js/' )
-	.sass( 'src/Addon/resources/css/frontend/ADDON_ID-frontend.scss', 'public/css' );
+	// public assetsç
+	.js( 'src/Domain/resources/js/frontend/give-fbpt.js', 'public/js/' )
+	.sass( 'src/Domain/resources/css/frontend/give-fbpt-frontend.scss', 'public/css' );
 
 mix.webpackConfig( {
 	externals: {
@@ -26,7 +26,7 @@ if ( mix.inProduction() ) {
 		domain: 'GIVE_FBPT',
 		destFile: 'languages/GIVE_FBPT.pot',
 		relativeTo: './',
-		bugReport: 'https://github.com/impress-org/ADDON_ID/issues/new',
+		bugReport: 'https://github.com/impress-org/give-fbpt/issues/new',
 		team: 'GiveWP <info@givewp.com>',
 	} );
 }

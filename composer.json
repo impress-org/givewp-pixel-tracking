@@ -1,5 +1,5 @@
 {
-    "name": "impress-org/ADDON_ID",
+    "name": "impress-org/give-fbpt",
     "description": "ADDON_DESCRIPTION",
     "type": "wordpress-plugin",
     "license": "GPL-2.0-or-later",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "GiveAddon\\": "src/"
+            "GiveFBPT\\": "src/"
         }
     }
 }

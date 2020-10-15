@@ -1,11 +1,11 @@
 <?php
 
-namespace GiveAddon\Addon;
+namespace GiveFBPT\Addon;
 
 /**
  * Helper class responsible for loading add-on translations.
  *
- * @package     GiveAddon\Addon\Helpers
+ * @package     GiveFBPT\Addon\Helpers
  * @copyright   Copyright (c) 2020, GiveWP
  */
 class Language {
@@ -20,7 +20,7 @@ class Language {
 		// Set filter for plugin's languages directory.
 		$langDir = apply_filters(
 			sprintf( '%s_languages_directory', 'GIVE_FBPT' ), // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores, WordPress.NamingConventions.ValidHookName.NotLowercase
-			dirname( ADDON_CONSTANT_BASENAME ) . '/languages/'
+			dirname( GIVE_FBPT_BASENAME ) . '/languages/'
 		);
 
 		// Traditional WordPress plugin locale filter.

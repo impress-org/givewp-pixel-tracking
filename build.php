@@ -56,13 +56,13 @@ $files = array_filter( array_merge(
 } );
 
 $replacements = [
-	'GiveAddon'         => trim( $namespace ),
+	'GiveFBPT'         => trim( $namespace ),
 	'\\Domain'          => trim( "\\$domain" ),
 	'GIVE_FBPT'        => trim( $name ),
-	'ADDON_CONSTANT'    => trim( $constant ),
+	'GIVE_FBPT'    => trim( $constant ),
 	'ADDON_DESCRIPTION' => trim( $description ),
 	'GIVE_FBPT'  => trim( $textDomain ),
-	'ADDON_ID'          => trim( $id ),
+	'give-fbpt'          => trim( $id ),
 ];
 
 foreach ( $files as $file ) {

@@ -1,10 +1,10 @@
 <?php
-namespace GiveAddon\Domain;
+namespace GiveFBPT\Domain;
 
 /**
  * Example code to show how to add setting page to give settings.
  *
- * @package     GiveAddon\Addon
+ * @package     GiveFBPT\Addon
  * @subpackage  Classes/Give_BP_Admin_Settings
  * @copyright   Copyright (c) 2020, GiveWP
  */
@@ -16,7 +16,7 @@ class SettingsPage extends \Give_Settings_Page {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-		$this->id          = 'ADDON_ID';
+		$this->id          = 'give-fbpt';
 		$this->label       = esc_html__( 'GIVE_FBPT Setting ', 'GIVE_FBPT' );
 		$this->default_tab = 'text_fields';
 

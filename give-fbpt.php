@@ -1,8 +1,8 @@
-<?php namespace GiveAddon;
+<?php namespace GiveFBPT;
 
-use GiveAddon\Addon\Activation;
-use GiveAddon\Addon\Environment;
-use GiveAddon\Domain\AddonServiceProvider;
+use GiveFBPT\Addon\Activation;
+use GiveFBPT\A∑∑ddon\Environment;
+use GiveFBPT\Domain\AddonServiceProvider;
 
 /**
  * Plugin Name: GIVE_FBPT
@@ -17,28 +17,28 @@ use GiveAddon\Domain\AddonServiceProvider;
 defined( 'ABSPATH' ) or exit;
 
 // Add-on name
-define( 'ADDON_CONSTANT_NAME', 'GIVE_FBPT' );
+define( 'GIVE_FBPT_NAME', 'GIVE_FBPT' );
 
 // Versions
-define( 'ADDON_CONSTANT_VERSION', '1.0.0' );
-define( 'ADDON_CONSTANT_MIN_GIVE_VERSION', '2.8.0' );
+define( 'GIVE_FBPT_VERSION', '1.0.0' );
+define( 'GIVE_FBPT_MIN_GIVE_VERSION', '2.8.0' );
 
 // Add-on paths
-define( 'ADDON_CONSTANT_FILE', __FILE__ );
-define( 'ADDON_CONSTANT_DIR', plugin_dir_path( ADDON_CONSTANT_FILE ) );
-define( 'ADDON_CONSTANT_URL', plugin_dir_url( ADDON_CONSTANT_FILE ) );
-define( 'ADDON_CONSTANT_BASENAME', plugin_basename( ADDON_CONSTANT_FILE ) );
+define( 'GIVE_FBPT_FILE', __FILE__ );
+define( 'GIVE_FBPT_DIR', plugin_dir_path( GIVE_FBPT_FILE ) );
+define( 'GIVE_FBPT_URL', plugin_dir_url( GIVE_FBPT_FILE ) );
+define( 'GIVE_FBPT_BASENAME', plugin_basename( GIVE_FBPT_FILE ) );
 
 require './vendor/autoload.php';
 
 // Activate add-on hook.
-register_activation_hook( ADDON_CONSTANT_FILE, [ Activation::class, 'activateAddon' ] );
+register_activation_hook( GIVE_FBPT_FILE, [ Activation::class, 'activateAddon' ] );
 
 // Deactivate add-on hook.
-register_deactivation_hook( ADDON_CONSTANT_FILE, [ Activation::class, 'deactivateAddon' ] );
+register_deactivation_hook( GIVE_FBPT_FILE, [ Activation::class, 'deactivateAddon' ] );
 
 // Uninstall add-on hook.
-register_uninstall_hook( ADDON_CONSTANT_FILE, [ Activation::class, 'uninstallAddon' ] );
+register_uninstall_hook( GIVE_FBPT_FILE, [ Activation::class, 'uninstallAddon' ] );
 
 // Register the add-on service provider with the GiveWP core.
 add_action(

@@ -1,11 +1,11 @@
 <?php
 
-namespace GiveAddon\Addon;
+namespace GiveFBPT\Addon;
 
 /**
  * Helper class responsible for checking the add-on environment.
  *
- * @package     GiveAddon\Addon\Helpers
+ * @package     GiveFBPT\Addon\Helpers
  * @copyright   Copyright (c) 2020, GiveWP
  */
 class Environment {
@@ -35,7 +35,7 @@ class Environment {
 	 * @return bool
 	 */
 	public static function giveMinRequiredVersionCheck() {
-		return defined( 'GIVE_VERSION' ) && version_compare( GIVE_VERSION, ADDON_CONSTANT_MIN_GIVE_VERSION, '>=' );
+		return defined( 'GIVE_VERSION' ) && version_compare( GIVE_VERSION, GIVE_FBPT_MIN_GIVE_VERSION, '>=' );
 	}
 
 	/**

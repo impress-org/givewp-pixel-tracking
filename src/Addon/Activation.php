@@ -1,10 +1,10 @@
 <?php
-namespace GiveAddon\Addon;
+namespace GiveFBPT\Addon;
 
 /**
  * Example of a helper class responsible for registering and handling add-on activation hooks.
  *
- * @package     GiveAddon\Addon
+ * @package     GiveFBPT\Addon
  * @copyright   Copyright (c) 2020, GiveWP
  */
 class Activation {

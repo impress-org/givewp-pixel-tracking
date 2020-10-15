@@ -1,5 +1,5 @@
 {
-    "name": "ADDON_ID",
+    "name": "give-fbpt",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -20,15 +20,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/impress-org/ADDON_ID.git"
+        "url": "git+https://github.com/impress-org/give-fbpt.git"
     },
     "author": "GiveWP, LLC",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/impress-org/ADDON_ID/issues"
+        "url": "https://github.com/impress-org/give-fbpt/issues"
     },
     "private": true,
-    "homepage": "https://github.com/impress-org/ADDON_ID#readme",
+    "homepage": "https://github.com/impress-org/give-fbpt#readme",
     "devDependencies": {
         "@babel/eslint-parser": "^7.11.5",
         "@babel/plugin-transform-react-jsx": "^7.10.4",
