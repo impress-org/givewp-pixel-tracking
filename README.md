@@ -1,43 +1,48 @@
-# Simple Social Shout for GiveWP
+# Give - Addon Boilerplate
+A demo plugin to serve as a boilerplate for developers to understand how to extend the Give Donation
+plugin for WordPress
 
-A GiveWP add-on that adds simple social sharing buttons to the Donation Confirmation page.
+## Installation
+1. `php build.php`
+2. `composer install`
+3. `npm install`
 
-![image](assets/images/screenshot-1.png)
+## Concepts
 
-## Description
-Let your donors share their donation experience with the world of social media. Social proof can be a powerful way to encourage more donations.
+GiveWP follows a domain-driven model both in core and in add-ons. Each business feature defines
+its own domain, including whatever it needs (settings, models, etc.) to do what it does. It's also
+important these domains are portable, that is, they are not bound to the plugin and could move to or
+from another plugin as needed.
 
-This is a simple GiveWP add-on with very few options:
+For these reasons, each add-on has two primary directories for handling its logic:
+- src/Addon
+- src/Domain
 
-<ul>
-<li><strong>Social Share Title</strong><br />A heading above the social share buttons.</li>
-<li><strong>Social Share Encouragement</strong><br />A paragraph below the title to encourage your donors to share their donation on social media</li>
-<li><strong>Channels</strong><br />Checkbox list of the four supported social channels: Facebook, Twitter, LinkedIn, Pinterest</li>
-<li><strong>Position</strong><br />Choose whether to output the social share section above or below the Donation Confirmation receipt table.</li>
-</ul>
+### src directory
 
-That's all you need to get up and running with this simple GiveWP add-on and start letting your donors share their donations with the world on social media.
+The src directory handles business domain logic (i.e. a specific feature). The src
+directory should have no files in the root, but be a collection of folders. Each folder represents
+a distinct domain. Even if there is only one domain for the add-on, it should still live inside a
+domain directory.
 
-## Frequently Asked Questions
+### src/Domain directory
 
-<details><summary>Can I style the social share buttons?</summary>
+It is possible for an add-on to have multiple domains, but it will always have at least one. Feel
+free to duplicate this directory and make more. This directory is just the starting point for the
+initial domain.
 
-Of course you can use CSS, but if you want more complex customization of the appearance you can add a file into your theme's root folder called `sss4givewp.php` and that will be the output of your social sharing instead. It's best if you copy the template from the plugin to start from. The default template is found in the plugin in `/templates/basic-template.php`.
+### src/Addon directory
 
-</details>
-<details><summary>I want to add X social platform; will you add it?</summary>
+This unique domain directory is responsible for the fact that the add-on is a WordPress plugin.
+Plugins do things such as activate, upgrade, and uninstall — the logic of which should be handled
+there. All GiveWP add-ons also check for compatibility with GiveWP core, and this also is handled
+here.
 
-These three platforms each support a link-based sharing that does not require javascript or authentication -- this is why they were chosen and why this add-on is called "simple". But if you want to add additional platforms and know how to implement them correctly, see the above FAQ on how you can template the output yourself.
-</details>
+The `src/Addon` directory may reference code in the `src` directory, but not the other way around.
+No domain code should reference (and therefore depend on) the `src/Addon` directory. Doing this
+keeps the dependency unidirectional.
 
-## Changelog
-**2020-01 -- Version 1.0**
-
-Launched version 1 with the following features:
-* Settings page that includes:
-    * Title
-    * Message
-    * Channels
-    * Position
-* Output is templateable
-* Per form disable option 
+#### Note for developers
+If running `npm run dev` throws an error then check whether the `images` folder exists in your addon directory under `src/Addon/resources`. 
+1. If the `images` folder does not exist then create one. 
+2. If the `images` folder isn't required then remove the code from `webpack.config.js`.
