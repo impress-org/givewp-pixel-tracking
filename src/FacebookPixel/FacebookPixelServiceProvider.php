@@ -17,7 +17,7 @@ use GiveFBPT\Addon\ActivationBanner;
  * @package     GiveFBPT\Addon
  * @copyright   Copyright (c) 2020, GiveWP
  */
-class AddonServiceProvider implements ServiceProvider {
+class FacebookPixelServiceProvider implements ServiceProvider {
 	/**
 	 * @inheritDoc
 	 */

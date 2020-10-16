@@ -2,7 +2,7 @@
 
 use GiveFBPT\Addon\Activation;
 use GiveFBPT\Addon\Environment;
-use GiveFBPT\FacebookPixel\AddonServiceProvider;
+use GiveFBPT\FacebookPixel\FacebookPixelServiceProvider;
 
 /**
  * Plugin Name: Give - Facebook Pixel Tracking
@@ -46,7 +46,7 @@ add_action(
 	function () {
 		// Check Give min required version.
 		if ( Environment::giveMinRequiredVersionCheck() ) {
-			give()->registerServiceProvider( AddonServiceProvider::class );
+			give()->registerServiceProvider( FacebookPixelServiceProvider::class );
 		}
 	}
 );
