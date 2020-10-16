@@ -2,7 +2,7 @@
 
 use GiveFBPT\Addon\Activation;
 use GiveFBPT\Addon\Environment;
-use GiveFBPT\Domain\AddonServiceProvider;
+use GiveFBPT\FacebookPixel\AddonServiceProvider;
 
 /**
  * Plugin Name: Give - Facebook Pixel Tracking

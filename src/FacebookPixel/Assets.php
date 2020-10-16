@@ -1,5 +1,5 @@
 <?php
-namespace GiveFBPT\Domain;
+namespace GiveFBPT\FacebookPixel;
 
 use \Give\Helpers\Form\Utils as FormUtils;
 

@@ -1,11 +1,11 @@
 <?php
-namespace GiveFBPT\Domain;
+namespace GiveFBPT\FacebookPixel;
 
 use Give\Helpers\Hooks;
 use Give\ServiceProviders\ServiceProvider;
 
-use GiveFBPT\Domain\Helpers\SettingsPage;
-use GiveFBPT\Domain\SettingsPage as AddonSettingsPage;
+use GiveFBPT\FacebookPixel\Helpers\SettingsPage;
+use GiveFBPT\FacebookPixel\SettingsPage as AddonSettingsPage;
 use GiveFBPT\Addon\Activation;
 use GiveFBPT\Addon\License;
 use GiveFBPT\Addon\Language;

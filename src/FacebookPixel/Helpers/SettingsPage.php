@@ -1,6 +1,6 @@
 <?php
 
-namespace GiveFBPT\Domain\Helpers;
+namespace GiveFBPT\FacebookPixel\Helpers;
 
 use InvalidArgumentException;
 

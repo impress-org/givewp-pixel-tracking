@@ -1,5 +1,5 @@
 <?php
-namespace GiveFBPT\Domain;
+namespace GiveFBPT\FacebookPixel;
 
 /**
  * Example code to show how to add setting page to give settings.

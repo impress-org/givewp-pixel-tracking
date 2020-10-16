@@ -16,7 +16,7 @@ from another plugin as needed.
 
 For these reasons, each add-on has two primary directories for handling its logic:
 - src/Addon
-- src/Domain
+- src/FacebookPixel
 
 ### src directory
 
@@ -25,7 +25,7 @@ directory should have no files in the root, but be a collection of folders. Each
 a distinct domain. Even if there is only one domain for the add-on, it should still live inside a
 domain directory.
 
-### src/Domain directory
+### src/FacebookPixel directory
 
 It is possible for an add-on to have multiple domains, but it will always have at least one. Feel
 free to duplicate this directory and make more. This directory is just the starting point for the

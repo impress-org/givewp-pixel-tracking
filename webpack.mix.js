@@ -6,12 +6,12 @@ mix
 	.sourceMaps( false )
 
 	// admin assets
-	.js( 'src/Domain/resources/js/admin/give-fbpt-admin.js', 'public/js/' )
-	.sass( 'src/Domain/resources/css/admin/give-fbpt-admin.scss', 'public/css' )
+	.js( 'src/FacebookPixel/resources/js/admin/give-fbpt-admin.js', 'public/js/' )
+	.sass( 'src/FacebookPixel/resources/css/admin/give-fbpt-admin.scss', 'public/css' )
 
 	// public assetsç
-	.js( 'src/Domain/resources/js/frontend/give-fbpt.js', 'public/js/' )
-	.sass( 'src/Domain/resources/css/frontend/give-fbpt.scss', 'public/css' );
+	.js( 'src/FacebookPixel/resources/js/frontend/give-fbpt.js', 'public/js/' )
+	.sass( 'src/FacebookPixel/resources/css/frontend/give-fbpt.scss', 'public/css' );
 
 mix.webpackConfig( {
 	externals: {
