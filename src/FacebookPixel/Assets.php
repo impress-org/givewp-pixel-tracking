@@ -60,11 +60,11 @@ class Assets {
 			);
 
 			$session    = new DonationAccessor();
-			$donation = new Donation( $session->getDonationId() );
+			$donation 	= new Donation( $session->getDonationId() );
 
 			$localized_data = [
-				'currency' => $donation->currency,
-				'amount' => $donation->total,
+				'currency' 	=> $donation->currency,
+				'amount' 	=> $donation->total,
 			];
 
 			wp_localize_script( 'give-fbpt-script-frontend', 'giveFBPT', $localized_data );
