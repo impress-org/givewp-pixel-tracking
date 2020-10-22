@@ -59,8 +59,8 @@ class Assets {
 				true
 			);
 
-			$session    = new DonationAccessor();
-			$donation 	= new Donation( $session->getDonationId() );
+			$session	= new DonationAccessor();
+			$donation	= new Donation( $session->getDonationId() );
 
 			$localized_data = [
 				'currency' 	=> $donation->currency,
