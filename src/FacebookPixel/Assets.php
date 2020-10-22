@@ -2,6 +2,8 @@
 namespace GiveFBPT\FacebookPixel;
 
 use \Give\Helpers\Form\Utils as FormUtils;
+use \Give\Session\SessionDonation\DonationAccessor;
+use \Give_Payment as Donation;
 
 /**
  * Helper class responsible for loading add-on assets.
@@ -56,6 +58,17 @@ class Assets {
 				GIVE_FBPT_VERSION,
 				true
 			);
+
+			$session	= new DonationAccessor();
+			$donation	= new Donation( $session->getDonationId() );
+
+			$localized_data = [
+				'currency' 	=> $donation->currency,
+				'amount' 	=> $donation->total,
+			];
+
+			wp_localize_script( 'give-fbpt-script-frontend', 'giveFBPT', $localized_data );
+
 		}
 	}
 }

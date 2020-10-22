@@ -4,6 +4,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+-   FB Pixel Donate and Purchase events now fire from Receipt pages (#10)
+
 ### Changed
 
 -   Facebook Pixel Tracking add-on now uses the add-on boilerplate (#8)
