@@ -59,10 +59,16 @@ class Assets {
 				true
 			);
 
-			$session	= new DonationAccessor();
-			$donation	= new Donation( $session->getDonationId() );
+			$purchase = Give()->session->get('give_purchase');
+
+			if ( isset( $purchase['post_data']['give_create_account'] ) && $purchase['post_data']['give_create_account'] === 'on' ) {
+				$isNewRegistration = true;
+			}
+
+			$donation	= new Donation( $purchase['donation_id'] );
 
 			$localized_data = [
+				'isNewRegistration' => $isNewRegistration,
 				'currency' 	=> $donation->currency,
 				'amount' 	=> $donation->total,
 			];
