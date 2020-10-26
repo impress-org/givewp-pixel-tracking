@@ -2,7 +2,6 @@
 namespace GiveFBPT\FacebookPixel;
 
 use \Give\Helpers\Form\Utils as FormUtils;
-use \Give\Session\SessionDonation\DonationAccessor;
 use \Give_Payment as Donation;
 
 /**
