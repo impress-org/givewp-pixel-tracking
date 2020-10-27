@@ -62,6 +62,8 @@ class Assets {
 
 			if ( isset( $purchase['post_data']['give_create_account'] ) && $purchase['post_data']['give_create_account'] === 'on' ) {
 				$isNewRegistration = true;
+			} else {
+				$isNewRegistration = false;
 			}
 
 			$donation	= new Donation( $purchase['donation_id'] );
