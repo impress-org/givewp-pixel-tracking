@@ -72,6 +72,7 @@ class Assets {
 				'isNewRegistration' => $isNewRegistration,
 				'currency' 	=> $donation->currency,
 				'amount' 	=> $donation->total,
+				'status' => $donation->status,
 			];
 
 			wp_localize_script( 'give-fbpt-script-frontend', 'giveFBPT', $localized_data );
