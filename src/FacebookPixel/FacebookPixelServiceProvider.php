@@ -6,10 +6,7 @@ use Give\ServiceProviders\ServiceProvider;
 
 use GiveFBPT\FacebookPixel\Helpers\SettingsPage;
 use GiveFBPT\FacebookPixel\SettingsPage as AddonSettingsPage;
-use GiveFBPT\Addon\Activation;
-use GiveFBPT\Addon\License;
 use GiveFBPT\Addon\Language;
-use GiveFBPT\Addon\ActivationBanner;
 
 /**
  * Example of a service provider responsible for add-on initialization.
@@ -21,9 +18,7 @@ class FacebookPixelServiceProvider implements ServiceProvider {
 	/**
 	 * @inheritDoc
 	 */
-	public function register() {
-		give()->singleton( Activation::class );
-	}
+	public function register() {}
 
 	/**
 	 * @inheritDoc
@@ -47,32 +42,10 @@ class FacebookPixelServiceProvider implements ServiceProvider {
 	private function loadBackend() {
 		// Register settings page
 		SettingsPage::registerPage( AddonSettingsPage::class );
-
-		Hooks::addAction( 'admin_init', License::class, 'check' );
-		//Hooks::addAction( 'admin_init', ActivationBanner::class, 'show' );
 		
 		// Load backend assets.
 		Hooks::addAction( 'admin_enqueue_scripts', Assets::class, 'loadBackendAssets' );
-		/**
-		 * Example of how to extend an existing settings page.
-		 */
-		// Remove settings page section.
-		SettingsPage::removePageSection( 'general', 'access-control' );
-		// Add new settings page section.
-		SettingsPage::addPageSection( 'general', 'new-section', 'New Access Control Section' );
-		// Add page settings.
-		SettingsPage::addSettings(
-			'general',
-			'new-section',
-			[
-				[
-					'name' => __( 'Custom Setting Field', 'GIVE_FBPT' ),
-					'id'   => 'custom_setting_field',
-					'desc' => __( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', 'GIVE_FBPT' ),
-					'type' => 'text',
-				],
-			]
-		);
+		
 	}
 
 	/**
