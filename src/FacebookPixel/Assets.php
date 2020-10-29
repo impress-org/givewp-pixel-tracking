@@ -2,7 +2,6 @@
 namespace GiveFBPT\FacebookPixel;
 
 use \Give\Helpers\Form\Utils as FormUtils;
-use \Give\Session\SessionDonation\DonationAccessor;
 use \Give_Payment as Donation;
 
 /**
@@ -59,12 +58,21 @@ class Assets {
 				true
 			);
 
-			$session	= new DonationAccessor();
-			$donation	= new Donation( $session->getDonationId() );
+			$purchase = Give()->session->get('give_purchase');
+
+			if ( isset( $purchase['post_data']['give_create_account'] ) && $purchase['post_data']['give_create_account'] === 'on' ) {
+				$isNewRegistration = true;
+			} else {
+				$isNewRegistration = false;
+			}
+
+			$donation	= new Donation( $purchase['donation_id'] );
 
 			$localized_data = [
+				'isNewRegistration' => $isNewRegistration,
 				'currency' 	=> $donation->currency,
 				'amount' 	=> $donation->total,
+				'status' => $donation->status,
 			];
 
 			wp_localize_script( 'give-fbpt-script-frontend', 'giveFBPT', $localized_data );

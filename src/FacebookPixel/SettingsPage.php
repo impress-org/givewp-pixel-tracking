@@ -17,7 +17,7 @@ class SettingsPage extends \Give_Settings_Page {
 	 */
 	public function __construct() {
 		$this->id          = 'give-fbpt';
-		$this->label       = esc_html__( 'GIVE_FBPT Setting ', 'GIVE_FBPT' );
+		$this->label       = esc_html__( 'Facebook Pixel Tracking', 'GIVE_FBPT' );
 		$this->default_tab = 'text_fields';
 
 		parent::__construct();

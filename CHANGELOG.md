@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   FB Pixel Donate and Purchase events now fire from Receipt pages (#10)
+-   FB Pixel Complete Registration event now fires on new user registration (#12)
 
 ### Changed
 
