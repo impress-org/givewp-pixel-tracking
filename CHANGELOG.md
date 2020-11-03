@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 -   Facebook Pixel Tracking add-on now uses the add-on boilerplate (#8)
+-   Add-on boilerplate code has been removed from the FaceboolPixelServiceProvider (#14)
