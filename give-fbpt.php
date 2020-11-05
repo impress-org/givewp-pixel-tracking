@@ -29,7 +29,7 @@ define( 'GIVE_FBPT_DIR', plugin_dir_path( GIVE_FBPT_FILE ) );
 define( 'GIVE_FBPT_URL', plugin_dir_url( GIVE_FBPT_FILE ) );
 define( 'GIVE_FBPT_BASENAME', plugin_basename( GIVE_FBPT_FILE ) );
 
-require GIVE_FBPT_DIR . '/vendor/autoload.php';
+require GIVE_FBPT_DIR . 'vendor/autoload.php';
 
 // Activate add-on hook.
 register_activation_hook( GIVE_FBPT_FILE, [ Activation::class, 'activateAddon' ] );

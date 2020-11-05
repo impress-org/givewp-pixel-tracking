@@ -51,3 +51,6 @@ vendor
 
 # Assert directory
 assets/dist
+
+# Languages
+/languages/GIVE_FBPT.pot
