@@ -1,4 +1,4 @@
-=== Give - Facebook Pixel Tracking Add-On ===
+=== Give - Pixel Tracking Add-On ===
 Contributors: givewp, wordimpress, dlocc, webdevmattcrom
 Donate link: https://givewp.com/
 Tags: givewp, donation, donations, donation plugin, wordpress donation plugin, wp donation, donors, display donors, give donors, anonymous donations
