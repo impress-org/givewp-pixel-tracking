@@ -9,9 +9,12 @@ mix
 	.js( 'src/FacebookPixel/resources/js/admin/give-fbpt-admin.js', 'public/js/' )
 	.sass( 'src/FacebookPixel/resources/css/admin/give-fbpt-admin.scss', 'public/css' )
 
-	// public assetsç
+	// public assets
 	.js( 'src/FacebookPixel/resources/js/frontend/give-fbpt.js', 'public/js/' )
-	.sass( 'src/FacebookPixel/resources/css/frontend/give-fbpt.scss', 'public/css' );
+	.sass( 'src/FacebookPixel/resources/css/frontend/give-fbpt.scss', 'public/css' )
+
+	// images
+	.copy( 'src/FacebookPixel/resources/images/*.{jpg,jpeg,png,gif}', 'public/images' );
 
 mix.webpackConfig( {
 	externals: {

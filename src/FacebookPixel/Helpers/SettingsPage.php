@@ -83,6 +83,26 @@ class SettingsPage {
 	}
 
 	/**
+	 * Add Settings Link tab to plugin row.
+	 *
+	 * @param $actions
+	 *
+	 * @return array
+	 */
+	public function addSettingsLink( $actions ) {
+		$new_actions = [
+			'settings' => sprintf(
+				'<a href="%1$s">%2$s</a>',
+				admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=give-fbpt' ),
+				__( 'Documentation', 'give-double-the-donation' )
+			),
+		];
+
+		return array_merge( $new_actions, $actions );
+	}
+
+
+	/**
 	 * Remove Settings page section.
 	 *
 	 * @param string $settingsId - settings page ID
@@ -103,5 +123,4 @@ class SettingsPage {
 			999
 		);
 	}
-
 }
