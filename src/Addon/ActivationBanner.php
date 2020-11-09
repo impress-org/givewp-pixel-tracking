@@ -22,9 +22,9 @@ class ActivationBanner {
 			'file'              => GIVE_FBPT_FILE,
 			'name'              => GIVE_FBPT_NAME,
 			'version'           => GIVE_FBPT_VERSION,
-			'settings_url'      => admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=give-addon-boilerplate' ),
-			'documentation_url' => 'https://givewp.com/documentation/add-ons/boilerplate/',
-			'support_url'       => 'https://givewp.com/support/',
+			'settings_url'      => admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=give-fbpt' ),
+			'documentation_url' => admin_url( 'edit.php?post_type=give_forms&page=give-settings&tab=give-fbpt' ),
+			'support_url'       => 'https://wordpress.org/support/plugin/give-pixel-tracking/',
 			'testing'           => false, // Never leave true.
 		];
 

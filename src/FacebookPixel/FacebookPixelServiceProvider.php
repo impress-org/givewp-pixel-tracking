@@ -45,6 +45,8 @@ class FacebookPixelServiceProvider implements ServiceProvider {
 		
 		// Load backend assets.
 		Hooks::addAction( 'admin_enqueue_scripts', Assets::class, 'loadBackendAssets' );
+
+		Hooks::addFilter( 'plugin_action_links_' . GIVE_FBPT_BASENAME, SettingsPage::class, 'addSettingsLink' );
 		
 	}
 
