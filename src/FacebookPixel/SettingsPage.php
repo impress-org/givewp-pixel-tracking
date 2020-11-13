@@ -49,6 +49,12 @@ class SettingsPage extends \Give_Settings_Page {
 			</ul>
 
 			<p><a href="https://developers.facebook.com/docs/facebook-pixel/reference" target="_blank" rel="noopener"><?php _e('You can learn more about these events here.', 'GIVE_FBPT'); ?></a></p>
+			
+			<hr />
+			<p><strong><?php _e('Haven\'t yet installed the Facebook pixel on your website?', 'GIVE_FBPT'); ?></strong></p>
+			<p>
+				<?php printf(esc_html('See %1$sFacebook\'s detailed guide here%2$s.', 'GIVE_FBPT'), '<a href="https://www.facebook.com/business/m/pixel-platform-install/" target="_blank" rel="noopener">','</a>'); ?>
+			</p>
 
 			<h3><?php _e('Troubleshooting the Facebook Pixel', 'GIVE_FBPT'); ?></h3>
 			<p><?php printf(esc_html('The best way to confirm that these events are firing on your donation confirmation panel correctly is to use the %1$sFacebook Pixel Helper Chrome Extension%2$s.', 'GIVE_FBPT'),'<a href="https://www.facebook.com/business/help/198406697184603?id=1205376682832142" target="_blank" rel="noopener">', '</a>'); ?></p>
