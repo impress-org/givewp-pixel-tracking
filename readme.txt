@@ -3,9 +3,9 @@ Contributors: givewp, webdevmattcrom, henryholtgeerts, jason_the_adams, dlocc
 Donate link: https://givewp.com/
 Tags: givewp, facebook pixel, conversion, donations
 Requires at least: 4.8
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires Give: 2.8.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -78,6 +78,9 @@ Most likely you have some sort of Javascript error on your website that is preve
 1. When activated, this addon will help you trigger the "Donate", "Purchase", and "Complete Registration" events as seen in your Facebook Ad Manager account.
 
 == Changelog ==
+
+= 1.0.1: November 6, 2020 =
+* Adds a nifty link to the Installation Guide documentation
 
 = 1.0.0: November 6, 2020 =
 * Initial plugin release. Yippee!
