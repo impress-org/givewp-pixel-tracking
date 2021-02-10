@@ -4,6 +4,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+-   Add a link to the Installation Guide documentation (#15)
+
 ## 1.0.0 - 2020-11-03
 
 ### Added
