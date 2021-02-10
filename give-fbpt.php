@@ -6,9 +6,9 @@ use GiveFBPT\FacebookPixel\FacebookPixelServiceProvider;
 
 /**
  * Plugin Name: Give - Pixel Tracking
- * Plugin URI:  https://givewp.com/addons/BOILERPLATE/
+ * Plugin URI:  https://wordpress.org/plugins/give-pixel-tracking/
  * Description: A GiveWP add-on to add Facebook Pixel tracking to your website.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      GiveWP
  * Author URI:  https://givewp.com/
  * Text Domain: GIVE_FBPT
@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) or exit;
 define( 'GIVE_FBPT_NAME', 'GIVE_FBPT' );
 
 // Versions
-define( 'GIVE_FBPT_VERSION', '1.0.0' );
+define( 'GIVE_FBPT_VERSION', '1.0.1' );
 define( 'GIVE_FBPT_MIN_GIVE_VERSION', '2.8.0' );
 
 // Add-on paths
