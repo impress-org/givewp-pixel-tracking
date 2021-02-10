@@ -62,7 +62,10 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 = How do I install the Facebook Pixel on my website? = 
 
-There are many ways to do that. Here's [a few plugins that can help](https://wordpress.org/plugins/search/facebook+pixel/).
+There are many ways to do that:
+
+* Here's [a few plugins that can help](https://wordpress.org/plugins/search/facebook+pixel/). 
+* Here's [a detailed guide from Facebook on how to install and test your pixel](https://www.facebook.com/business/m/pixel-platform-install/).
 
 It is important to understand that this plugin only works if the Facebook Pixel is already installed on your website. This extends your pixel to include the donation activity coming from your GiveWP forms. 
 
