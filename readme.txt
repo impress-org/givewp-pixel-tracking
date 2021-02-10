@@ -79,7 +79,7 @@ Most likely you have some sort of Javascript error on your website that is preve
 
 == Changelog ==
 
-= 1.0.1: November 6, 2020 =
+= 1.0.1: February 9th, 2021 =
 * Adds a nifty link to the Installation Guide documentation
 
 = 1.0.0: November 6, 2020 =
