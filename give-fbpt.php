@@ -1,9 +1,4 @@
-<?php namespace GiveFBPT;
-
-use GiveFBPT\Addon\Activation;
-use GiveFBPT\Addon\Environment;
-use GiveFBPT\FacebookPixel\FacebookPixelServiceProvider;
-
+<?php
 /**
  * Plugin Name: Give - Pixel Tracking
  * Plugin URI:  https://wordpress.org/plugins/give-pixel-tracking/
@@ -14,6 +9,12 @@ use GiveFBPT\FacebookPixel\FacebookPixelServiceProvider;
  * Text Domain: GIVE_FBPT
  * Domain Path: /languages
  */
+namespace GiveFBPT;
+
+use GiveFBPT\Addon\Activation;
+use GiveFBPT\Addon\Environment;
+use GiveFBPT\FacebookPixel\FacebookPixelServiceProvider;
+
 defined( 'ABSPATH' ) or exit;
 
 // Add-on name

@@ -1,9 +1,9 @@
 === Give - Pixel Tracking ===
-Contributors: givewp, webdevmattcrom, henryholtgeerts, jason_the_adams, dlocc 
+Contributors: givewp, webdevmattcrom, henryholtgeerts, jason_the_adams, dlocc
 Donate link: https://givewp.com/
 Tags: givewp, facebook pixel, conversion, donations
 Requires at least: 4.8
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 5.6
 Stable tag: 1.0.1
 Requires Give: 2.8.0
@@ -14,15 +14,15 @@ A GiveWP Add-on to help administrators gather data on donor interaction via Face
 
 == Description ==
 
-The Facebook Pixel enables you to create custom audiences in Facebook Ad Manager to retarget your donor base or create look-alike audiences to reach out to new potential donors. 
+The Facebook Pixel enables you to create custom audiences in Facebook Ad Manager to retarget your donor base or create look-alike audiences to reach out to new potential donors.
 
-The Give Pixel Tracking add-on extends your core Facebook Pixel integration to add events to your GiveWP donation activity. 
+The Give Pixel Tracking add-on extends your core Facebook Pixel integration to add events to your GiveWP donation activity.
 
 Activating this add-on on your website (with the Facebook pixel already implemented), you'll automatically have the following events triggered:
 
-* The Donate event upon every successful donation 
-* The Purchase event upon every successful donation. This passes the currency and donation amount to your Ad Manager as well. 
-* The `CompleteRegistration` event if your form either forces user registration, or if your donor opts to have a user account created. 
+* The Donate event upon every successful donation
+* The Purchase event upon every successful donation. This passes the currency and donation amount to your Ad Manager as well.
+* The `CompleteRegistration` event if your form either forces user registration, or if your donor opts to have a user account created.
 
 You can learn about this and other events via the [Facebook Business Help](https://www.facebook.com/business/help/402791146561655?id=1205376682832142) section.
 
@@ -39,7 +39,7 @@ Add-ons like "Give -- Pixel Tracking" are a way that we are giving back to the W
 = Minimum Requirements =
 
 * GiveWP core plugin, version 2.9+
-* An existing Facebook Pixel implemented on your website 
+* An existing Facebook Pixel implemented on your website
 * WordPress 4.9 or greater
 * PHP version 7.1 or greater
 * MySQL version 5.6 or greater
@@ -60,20 +60,20 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 
 == Frequently Asked Questions ==
 
-= How do I install the Facebook Pixel on my website? = 
+= How do I install the Facebook Pixel on my website? =
 
 There are many ways to do that:
 
-* Here's [a few plugins that can help](https://wordpress.org/plugins/search/facebook+pixel/). 
+* Here's [a few plugins that can help](https://wordpress.org/plugins/search/facebook+pixel/).
 * Here's [a detailed guide from Facebook on how to install and test your pixel](https://www.facebook.com/business/m/pixel-platform-install/).
 
-It is important to understand that this plugin only works if the Facebook Pixel is already installed on your website. This extends your pixel to include the donation activity coming from your GiveWP forms. 
+It is important to understand that this plugin only works if the Facebook Pixel is already installed on your website. This extends your pixel to include the donation activity coming from your GiveWP forms.
 
-= I have a pixel on my site, and the add-on is activated, but I don't see my events happening in Facebook Ad Manager. What do I do? = 
+= I have a pixel on my site, and the add-on is activated, but I don't see my events happening in Facebook Ad Manager. What do I do? =
 
 Most likely you have some sort of Javascript error on your website that is preventing the pixel from firing correctly. Here's a helpful support article on how to troubleshoot javascript errors on your WordPress website.
 
-== Screenshots == 
+== Screenshots ==
 
 1. When activated, this addon will help you trigger the "Donate", "Purchase", and "Complete Registration" events as seen in your Facebook Ad Manager account.
 
@@ -85,5 +85,5 @@ Most likely you have some sort of Javascript error on your website that is preve
 = 1.0.0: November 6, 2020 =
 * Initial plugin release. Yippee!
 * Adds Donate event
-* Adds Purchase event with currency and donation amount 
-* Adds CompleteRegistration event if a user account is generated during the donation 
+* Adds Purchase event with currency and donation amount
+* Adds CompleteRegistration event if a user account is generated during the donation
