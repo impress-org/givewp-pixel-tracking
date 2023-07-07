@@ -46,7 +46,7 @@
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.26.10",
         "sass-loader": "^8.0.2",
-        "stylelint": "^13.7.0",
+        "stylelint": "^15.10.1",
         "stylelint-config-prettier": "^8.0.2",
         "stylelint-config-wordpress": "^17.0.0",
         "stylelint-prettier": "^1.1.2",
